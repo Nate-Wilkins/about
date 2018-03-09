@@ -1,4 +1,5 @@
-auto/*
+auto/
+build/
 _region_.tex
 *.aux
 *.fdb_latexmk
@@ -7,4 +8,5 @@ _region_.tex
 *.out
 *.pdf
 *.synctex.gz
+*.fmt
 so-flair.png
