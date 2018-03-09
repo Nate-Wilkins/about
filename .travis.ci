@@ -1,0 +1,20 @@
+sudo: required
+dist: trusty
+before_install:
+- sudo apt-get -qq update
+- sudo apt-get install -y --no-install-recommends perl
+- sudo apt-get install -y --no-install-recommends latexmk
+- sudo apt-get install -y --no-install-recommends texlive texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
+- sudo apt-get install -y imagemagick
+script: make
+deploy:
+  provider: releases
+  api_key:
+    secure: "kk1yJENlXxBZFaMbGjR7mv+VkuC8XZzg5bVCh0LgmixYGwhtni2FuOuIfwpbtxJOFj3/CL0rJe1UYOBtah5gXoAJ/7ICKo4O2xozSxQ8DZX1xdsliyrs4TLUo5hgpBpAngrBEWElLB/t0rakAeK1zH4HooFMmZR/zq06v+u+HXo4OyLqvcGT7DXNCjOvUfA93cal473RfDcB7wPVFjZm0Qj6/9Loh806ZORgLr13RuOfPaij0OQpGaBEU1DIKXot2MdSy3ff+Y0MqCahHz/hp4dCBQEEKbjPOgyCim8rsYXmGU+iXop+2Nmga29J7T8l0uGegYoLakhz6+0l7HJ5e32ysS+CV6BxP+GdztWuKrKcjzIb2UAteEUDoOHrZKElFdfQGcYZiZBgdiI/fqJPYzKhxmp6QUF+FA3jSaryBy8V6NTP45e6a3SfBR8UiN7NUScH/OB5aNRDjAsqxoAAzCQAwMkpzSlfTIEbE0l2NeXo1zKo6hE4Wl1ETRr0Xa0iTdHdcPgG8ayAbKNKDOZzo9dr5IpxTsiW4qS0RBvy3sNtZItDOZQkqNKlPd2CEwA1Jf/roUlKCBmYz2T9qslPWl4TVnS1COn9zszBQ2wHmURQyBm3E2g4kVYs6PIJyKYa/IslsC7MqV+GC8BzgrCE/zvXKiLGbjpStiSRArclLnU="
+  file:
+  - _build/resume.pdf
+  - _build/resume-0.png
+  - _build/resume-1.png
+  skip_cleanup: true
+  on:
+    tags: true
