@@ -3,8 +3,8 @@ dist: trusty
 before_install:
 - sudo apt-get -qq update
 - sudo apt-get install -y --no-install-recommends perl
-- sudo apt-get install -y --no-install-recommends latexmk
 - sudo apt-get install -y --no-install-recommends texlive texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
+- sudo apt-get install -y latexmk
 - sudo apt-get install -y imagemagick
 script: make
 deploy:
