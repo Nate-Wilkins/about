@@ -1,5 +1,5 @@
 auto/
-build/
+_build/
 _region_.tex
 *.aux
 *.fdb_latexmk
