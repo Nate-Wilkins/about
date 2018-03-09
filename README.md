@@ -8,7 +8,7 @@
 
 ## Usage
 
-See the [latest release] for my résumé in a variety of different formats.
+See the [latest release] for my résumé in a variety of formats.
 
 ### Preview
 
