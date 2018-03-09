@@ -1,0 +1,425 @@
+%---------------------------%
+%    nate-wilkins/resume    %
+%---------------------------%
+
+% --[ Notes ]-------------------------------------------------------------------\
+% /
+% - extra copies (3)
+% - bring your business cards (5)
+% - ask to take/have notes
+%   - take notes on your copy
+%   - something to write with
+% - get there early (don't go in)
+% - get business cards or write down names
+% - make a list of references to hand out
+% - make a list of questions to ask
+% ------------------------------------------------------------------------------/
+
+\documentclass[letterpaper,11pt]{article}
+\author{nate-wilkins}
+\date{\today}
+
+\usepackage[empty]{fullpage}
+\usepackage[pdftex]{hyperref}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{verbatim}
+\usepackage{marvosym}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{graphicx}
+
+\usepackage{tikzpagenodes}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\rfoot{\thepage \hspace{1pt} of \pageref{LastPage}}
+
+\usepackage[
+  top    = .75cm,
+  bottom = .75cm,
+  left   =  1.25cm,
+  right  =  1.25cm,
+  marginparsep   = 0pt,
+  marginparwidth = 0pt,
+  % ----------------------------------------------------[ DEBUG :: Show Frame ]-\
+  %showframe,
+  ]{geometry}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% -[ Custom Commands ]----------------------------------------------------------\
+% /
+
+% \rSkill*
+\newcommand{\rSkillListStart}{\begin{itemize}[leftmargin=*,label={}]}
+\newcommand{\rSkillListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+% \rExp*
+\newcommand{\rExpListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\rExp}[3]{
+  \vspace{-.5pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \large{\textbf{#1}} \textit{#2} & \textit{#3} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\rExpListEnd}{\end{itemize}}
+
+
+% \rProj*
+\newcommand{\rProjListStart}{\begin{itemize}[leftmargin=*,label={}]}
+\newcommand{\rProj}[3]{
+  \item\small{
+    \textbf{[#1] #2}{: #3 \vspace{-2pt}}
+  }
+}
+\newcommand{\rProjListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+% \rResp
+\newcommand{\rRespListStart}{\begin{itemize}[label={-}]}
+\newcommand{\rResp}[1]{
+  \item\small{
+    \textmd{#1 \vspace{0em}}
+  }
+}
+\newcommand{\rRespListEnd}{\end{itemize}\vspace{.25em}}
+
+
+% \rEdu*
+\newcommand{\rEduListStart}{\begin{itemize}[leftmargin=*,label={}]}
+\newcommand{\rEdu}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \textit{\small#2} & \textit{#3} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\rEduListEnd}{\end{itemize}\vspace{-5pt}}
+
+% \rOther*
+\newcommand{\rOtherListStart}{\begin{itemize}[leftmargin=*,label={-}]}
+\newcommand{\rOther}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} \textit{\small#2} & \textit{#3} \\
+  \end{tabular*}\vspace{-5pt}}
+\newcommand{\rOtherListEnd}{\end{itemize}\vspace{-5pt}}
+
+% \labelitemii
+\renewcommand{\labelitemii}{$\circ$}
+
+
+% -[ Document ]-----------------------------------------------------------------\
+% /
+\begin{document}
+
+% -----------------------------------------------------[ DEBUG :: Guide Lines ]-\
+
+% \begin{tikzpicture}[remember picture,overlay]
+% \draw[red] (current page.north) -- (current page.south);
+% \end{tikzpicture}
+
+% -[ Header ]-------------------------------------------------------------------\
+% /
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://code-null.com/about}{\Large Nathaniel Wilkins}} &
+    \href{mailto:nate-wilkins@code-null.com}{nate-wilkins@code-null.com} \\
+  \href{http://code-null.com/about}{code-null.com/about} & (585) 210-2403 \\
+\end{tabular*}
+
+% -[ Blurb ]--------------------------------------------------------------------\
+% /
+% TODO: ?
+
+% -[ Sections ]-----------------------------------------------------------------\
+% /
+\section{Programming Skills}
+\rSkillListStart
+  \item{
+    \textbf{Languages}{: Elixir, C\#, JavaScript, Python, SQL}
+    \hfill
+    \textbf{Technologies}{: GCP, Azure, React, Docker}
+  }
+
+  \item{
+    \textbf{Development}{: S/W Design Patterns, OO Modeling and Design, SOLID
+      Principles, Continuous Integration}
+  }
+\rSkillListEnd
+
+\section{Experience}
+\rExpListStart
+  % ---------------[ Liazon ]---------------------------------------------------\
+  \rExp  {Liazon} {Senior Software Engineer}                          {2015-2018}
+
+  \rProjListStart
+    % ----------[ BrightChoices ]-----------------------------------------------\
+    \rProj {web} {BrightChoices} {Online private benefits exchange for large and
+                                    small businesses worldwide.}
+
+    \rRespListStart
+      \rResp {Developed an easy-to-use, consistent, reproducible build
+                pipeline written in \textbf{PowerShell}. \\
+                Cut department development costs by 26 hours a day.}
+
+      \rResp {Utilized \textbf{NServiceBus}, \textbf{MSMQ}, and messaging
+                patterns to handle core business operations.}
+
+      \rResp {Implemented \textbf{Windsor} facilities - logging, database
+                transaction management, and event dispatching.}
+
+      \rResp {Provided insights into \textbf{AngularJS} and front-end best
+                practices.}
+
+      \rResp {Refactored component services to use a \textbf{Windsor IoC}
+                container to better manage component services and their
+                dependencies.}
+
+      \rResp {Implemented \textbf{SonarQube}, a code quality analysis tool,
+                to help manage technical debt across the organization.}
+
+      \rResp {Created \textbf{SpecFlow} integration tests to help put
+                monolithic legacy code under test.}
+
+      \rResp {Created \textbf{XUnit} component tests to solidify quoting,
+                underwriting, and eligibility features.}
+
+      \rResp {Collaborated with Operations to migrate our \textbf{TFS}
+                repository of 18,000 files to \textbf{Git}.}
+    \rRespListEnd
+
+    % ----------[ Employee Search ]---------------------------------------------\
+    \rProj {web} {Employee Search} {Internal presentation tool used by employers
+                                      to manage employees on the BrightChoices
+                                      platform.}
+    \rRespListStart
+      % TODO: Yeah?
+      \rResp {Communicated closely with key stakeholders to develop a full
+                functioning, self-contained application.}
+
+      \rResp {Reduced BrightChoices legacy employee search result load times
+                from 16s to 48ms.}
+
+      \rResp {Developed core search functionality on top of
+                \textbf{ElasticSearch} using \textbf{Mono C\#}. \\
+              Utilized advanced \textbf{ElasticSearch} functionality. From
+                sharding, typeahead, and custom tokenizers.}
+
+      \rResp {Implemented as a \textbf{Docker} container for portability and
+                easier deployments to \textbf{Azure}.}
+
+      \rResp {Developed custom sync tool with \textbf{Dapper} to align
+                ``master'' employee records. \\
+              Refactored later to implement Elastic's \textbf{LogStash}.}
+
+      \rResp {Implemented a \textbf{RESTFful} API using \textbf{NancyFX} for
+                data access.}
+
+      \rResp {Developed \textbf{MSMQ} event hooks to keep employee records
+                up-to-date with the BrightChoices platform.}
+
+      \rResp {Developed front-facing \textbf{SPA} with \textbf{ReactJS} to
+                organize employee information.}
+    \rRespListEnd
+
+    % ----------[ Insurance Inventory ]-----------------------------------------\
+    \rProj {web} {Insurance Inventory} {Administration application
+                                          used to manage insurance product
+                                          configurations.}
+
+    \rRespListStart
+      \rResp {Communicated closely with key stakeholders to develop a full
+        functioning application service.}
+
+      \rResp {Provided leadership to a small team within the organization to
+                build and deploy the application service.}
+
+      \rResp {Created \textbf{UML} diagrams and \textbf{\LaTeX} documents to
+                facilitate communication between teams.}
+
+      \rResp {Developed back-end functionality with \textbf{TopShelf} and
+                \textbf{C\#}.}
+
+      \rResp {Refactored existing BrightChoices front-end code written in
+                \textbf{Razor} to talk to the new application service.}
+    \rRespListEnd
+
+    % -------------[ Ocelot Test Runner ]---------------------------------------\
+    \rProj {native} {Ocelot Test Runner} {Developed an \textbf{Electron}
+                                            application to run
+                                            \textbf{SpecFlow} integration
+                                            tests for QEs.}
+
+    % -------------[ BrightChoices VR ]-----------------------------------------\
+    \rProj {native} {BrightChoices VR} {``Online'' private benefits exchange for
+                                          large and small businesses in virtual
+                                          reality!}
+
+    \rRespListStart
+      \rResp {Developed a rudimentary shopping experience in
+                \textbf{Virtual Reality} with \textbf{Unity} and the
+                \textbf{HTC Vive}.}
+
+      \rResp {Collaborated with two other team members to build a working
+                prototype in a two-day hackathon.}
+    \rRespListEnd
+  \rProjListEnd
+
+\pagebreak
+
+  % ---------------[ Carestream Health ]----------------------------------------\
+  \rExp  {Carestream Health} {Software Contractor}                    {2013-2015}
+  \rProjListStart
+    % -----------------[ NextGen Platform ]-------------------------------------\
+    \rProj {web/native} {NextGen Platform} {Rewrite of the CaptureCommon
+                                              Platform to architecture to
+                                              support the next generation of
+                                              X-Ray Solutions.}
+    \rRespListStart
+      \rResp {Served as a leading technical specialist.}
+
+      \rResp {Developed \textbf{il18n} system with \textbf{angular-translate},
+                \textbf{CLDR}, and \textbf{MomentJS}.}
+
+      \rResp {Developed build and deployment infrastructure using \textbf{npm}
+                and \textbf{NodeJS} integrated into \textbf{MSBuild}.}
+
+      \rResp {Established \textbf{AngularJS} design patterns and best
+                practices.}
+
+      \rResp {Developed kVp, MA, and time components used in the X-Ray
+                generator.}
+
+      \rResp {Utilized \textbf{MassTransit} and \textbf{SignalR} to interface
+                our web application directly with the modular XRS hardware.}
+
+      \rResp {Developed an easy-to-use spinner control that could be applied to
+                individual components.}
+
+      \rResp {Collaborated with product teams to gather required functionality.}
+
+      \rResp {Implemented modular configurations on build using \textbf{AngularJS}
+                services for use by platform products.}
+    \rRespListEnd
+
+    % ----------[ Translations Manager ]----------------------------------------\
+    \rProj {web} {Translations Manager} {Localization workflow application
+                                           to manage the creation,
+                                           maintenance, and processing of
+                                           NextGen product translations.}
+
+    \rRespListStart
+      % TODO: Yeah?
+      \rResp {Communicated closely with key stakeholders to develop a full
+                functioning, self-contained application.}
+
+      \rResp {Managed localizations for 25 languages and over 125,000
+        translations with ease.}
+
+      \rResp {Developed integrations into the \textbf{NextGen il18n}
+                infrastructure. \\
+              Created exporters for various formats
+                (\textbf{XLIFF}, \textbf{XML}, \textbf{JSON}, and \textbf{CSV})}
+
+      \rResp {Implemented a back-end \textbf{RESTful} API using
+                \textbf{WebAPI2} to access languages, translations, products,
+                and users.}
+
+      \rResp {Implemented a front-end \textbf{SPA} using \textbf{AngularJS} and
+                \textbf{ui-grid}.}
+
+      \rResp {Implemented full-text search functionality using \textbf{SQL} and
+                \textbf{NHibernate}.}
+
+      \rResp {Developed entity based permissions system with \textbf{LINQ} and
+                \textbf{ExpressionTrees} to limit user access to certain entities
+                regarding their own state.}
+
+      \rResp {Configured \textbf{IIS Web Deployments} to deploy to a local
+                intranet. \\
+              Later setup on \textbf{TravisCI} for automated deployments.}
+    \rRespListEnd
+
+    % -------------[ DRX Detector Applications ]--------------------------------\
+    \rProj {native} {DRX Detector Applications} {Sample software to provide
+                                                   partnered vendors to
+                                                   create third party
+                                                   applications to integrate
+                                                   with the DRX Detector.}
+    \rRespListStart
+      \rResp {Utilized the \textbf{C/C++ DRX API} to interface with the DRX
+                detector.}
+
+      \rResp {Removed over 10,000 unnecessary lines of code in the
+                \textbf{WinForms} project.}
+
+      \rResp {Utilized the facade pattern to encapsulate the open DRX detector
+                API.}
+    \rRespListEnd
+
+    % TODO: Mooooree
+  \rProjListEnd
+\rExpListEnd
+
+\section{Projects}
+\rProjListStart
+  \rProj {web} {eslint-plugin-bdd} {Implemented an \textbf{ESLint} plugin to lint
+                                      \textbf{BDD} specs.}
+
+  \rProj {web} {code-null.com} {Developed a personal website using
+                                  \textbf{Elixir} and hosted with
+                                  \textbf{Google Firebase}.}
+
+  \rProj {native} {EvE} {Developed reproducible development environments for
+                            Windows and Ubuntu. Utilizes \textbf{Docker} and
+                            various software packages.}
+
+  \rProj {native} {chocolatey-packages} {Implemented an \textbf{AU} repository
+                                            to automatically create
+                                            \textbf{Chocolatey} packages for
+                                            software not packaged by their
+                                            original maintainer.}
+\rProjListEnd
+
+\section{Education and Certifications}
+\rEduListStart
+  % ----------[ MCSD Programming in C\# ]---------------------------------------\
+  \rEdu {MCSD Programming in C\#} {}                                       {2015}
+
+  % ---------------[ Monroe Community College ]---------------------------------\
+  \rEdu {Monroe Community College} {Rochester, NY}                    {2013-2014}
+
+  \rRespListStart
+    \rResp {Developed a configurable Jeopardy game with questions, sound, and
+              even animations using Java.}
+
+    \rResp {Developed a time scheduling web application to help users resolve
+              conflicting schedules. Most notably tries to avoid Hamiltonian
+              cycles of overlapping time. Pitched to office registrar for
+              integration with the scheduling system.}
+  \rRespListEnd
+\rEduListEnd
+
+\section{Other}
+\rOtherListStart
+  \rOther {Placed 2nd in the Synacor Hackathon.} {Buffalo, NY}             {2017}
+
+  \rOther {Attended Abstractions.io conference.} {Pittsburgh, PA}          {2017}
+
+  \rOther {Attended CodeMash conferences.} {Sandusky, OH}             {2016-2017}
+\rOtherListEnd
+
+\end{document}
