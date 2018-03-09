@@ -1,21 +1,22 @@
 sudo: required
 dist: trusty
 before_install:
-- sudo apt-get -qq update
-- sudo apt-get install -y --no-install-recommends perl
-- sudo apt-get install -y --no-install-recommends texlive texlive-latex-extra
-- sudo apt-get install -y latexmk
-- sudo apt-get install -y imagemagick
+  - sudo apt-get -qq update
+  - sudo apt-get install -y --no-install-recommends perl
+  - sudo apt-get install -y --no-install-recommends texlive texlive-latex-extra
+  - sudo apt-get install -y latexmk
+  - sudo apt-get install -y imagemagick
 script: make
 env:
-    global:
-        - secure: "kk1yJENlXxBZFaMbGjR7mv+VkuC8XZzg5bVCh0LgmixYGwhtni2FuOuIfwpbtxJOFj3/CL0rJe1UYOBtah5gXoAJ/7ICKo4O2xozSxQ8DZX1xdsliyrs4TLUo5hgpBpAngrBEWElLB/t0rakAeK1zH4HooFMmZR/zq06v+u+HXo4OyLqvcGT7DXNCjOvUfA93cal473RfDcB7wPVFjZm0Qj6/9Loh806ZORgLr13RuOfPaij0OQpGaBEU1DIKXot2MdSy3ff+Y0MqCahHz/hp4dCBQEEKbjPOgyCim8rsYXmGU+iXop+2Nmga29J7T8l0uGegYoLakhz6+0l7HJ5e32ysS+CV6BxP+GdztWuKrKcjzIb2UAteEUDoOHrZKElFdfQGcYZiZBgdiI/fqJPYzKhxmp6QUF+FA3jSaryBy8V6NTP45e6a3SfBR8UiN7NUScH/OB5aNRDjAsqxoAAzCQAwMkpzSlfTIEbE0l2NeXo1zKo6hE4Wl1ETRr0Xa0iTdHdcPgG8ayAbKNKDOZzo9dr5IpxTsiW4qS0RBvy3sNtZItDOZQkqNKlPd2CEwA1Jf/roUlKCBmYz2T9qslPWl4TVnS1COn9zszBQ2wHmURQyBm3E2g4kVYs6PIJyKYa/IslsC7MqV+GC8BzgrCE/zvXKiLGbjpStiSRArclLnU="
+  global:
+    - secure: >-
+        pAoZ5Ydz3DZOzScYSppUIZYlbCYnhloG5GmNHGLmwJ+6G4OLp++SrHTFQPr2xkZys0pNHaYr13e7KInctUzVRjM9aJ6DO0FFNcW79+m4Hdp0x/P0aajZ1RKujBBdDeWtXH4YzAcGAGHEv3dB854mY6Fq5OgjSO7Cy8q07Iz04V6QuPHDHqgpScHn+vFpH9dyE8ObffrKVsmj+pEwyWQ3yYpqmUBz8HHnkva7k85z0JjOqE2+ZcG2SsUBV5YHI6B+KO9vw1+NP+VyYmFAdvRfUKbxer6QQ7lwwx6hxKa1L9xht2sYIlNSXCWHRBG+3OJuK99p0kLDkzpNoJ6GLFoQoHseSSBXAjdrRLrEKZ83jU6UC4+lsW+yObrXQFqSsr/GCOeywJICN2MZGKPDZ1p5tzXUfhkr1QZ6rLrHBKZJXK34k+hzrjdTQObCwYuND2RuY4/CwSAuunkCc0/RgIVOM09FUcncFiQDNo2q20vmS5z37fLPxX6rdYTr+lzJSjgikQrAH+JPrTeNpEYPay3t0RndN1SZ3j7t+7m8Gb3szXlc2FFnbOJcrAq1n9nUeYC5P+VNya8DPnoiFSLZi/kvJFJWOlU7HIl/NKiWqjxtT/bJCuEcyym8jp5KHFqE0C0eC3MYKl3S1EMmGXBJcyq+Yu1C3rNreKOa3KyR9k36J/4=
 deploy:
   provider: releases
   file:
-  - _build/resume.pdf
-  - _build/resume-0.png
-  - _build/resume-1.png
+    - _build/resume.pdf
+    - _build/resume-0.png
+    - _build/resume-1.png
   skip_cleanup: true
-  on:
+  'on':
     tags: true
