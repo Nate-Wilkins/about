@@ -12,7 +12,12 @@ See the [latest release] for my résumé in a variety of different formats.
 
 ### Preview
 
-[![resume_front](https://github.com/nate-wilkins/about/releases/download/v0.1.0/resume-0.png)](https://github.com/nate-wilkins/about/releases/latest)
-[![resume_back](https://github.com/nate-wilkins/about/releases/download/v0.1.0/resume-1.png)](https://github.com/nate-wilkins/about/releases/latest)
+<a href="https://github.com/nate-wilkins/about/releases/latest">
+  <img alt="resume_front" src="https://github.com/nate-wilkins/about/releases/download/v0.1.0/resume-0.png" width="60%">
+</a>
+
+<a href="https://github.com/nate-wilkins/about/releases/latest">
+  <img alt="resume_back" src="https://github.com/nate-wilkins/about/releases/download/v0.1.0/resume-1.png" width="%60">
+</a>
 
 [latest release]: https://github.com/nate-wilkins/about/releases/latest
