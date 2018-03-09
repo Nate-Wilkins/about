@@ -12,7 +12,7 @@ flair:
 	wget -O so-flair.png 'https://stackoverflow.com/users/flair/422312.png?theme=clean'
 
 preview:
-	convert -density 300 _build/resume.pdf -quality 90 -background white -alpha remove _build/resume.png
+	convert -density 300 _build/resume.pdf -quality 90 -resize "50%" -background white -alpha remove _build/resume.png
 
 help:
 	@echo 'Makefile build automation                    '
