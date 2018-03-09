@@ -1,7 +1,7 @@
 all: clean build
 
 clean:
-	git clean -X -q
+	git clean -X -q -f
 
 build:
 	$(MAKE) flair
