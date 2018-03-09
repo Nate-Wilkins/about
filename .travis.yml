@@ -7,12 +7,11 @@ before_install:
   - sudo apt-get install -y latexmk
   - sudo apt-get install -y imagemagick
 script: make
-env:
-  global:
-    - secure: >-
-        pAoZ5Ydz3DZOzScYSppUIZYlbCYnhloG5GmNHGLmwJ+6G4OLp++SrHTFQPr2xkZys0pNHaYr13e7KInctUzVRjM9aJ6DO0FFNcW79+m4Hdp0x/P0aajZ1RKujBBdDeWtXH4YzAcGAGHEv3dB854mY6Fq5OgjSO7Cy8q07Iz04V6QuPHDHqgpScHn+vFpH9dyE8ObffrKVsmj+pEwyWQ3yYpqmUBz8HHnkva7k85z0JjOqE2+ZcG2SsUBV5YHI6B+KO9vw1+NP+VyYmFAdvRfUKbxer6QQ7lwwx6hxKa1L9xht2sYIlNSXCWHRBG+3OJuK99p0kLDkzpNoJ6GLFoQoHseSSBXAjdrRLrEKZ83jU6UC4+lsW+yObrXQFqSsr/GCOeywJICN2MZGKPDZ1p5tzXUfhkr1QZ6rLrHBKZJXK34k+hzrjdTQObCwYuND2RuY4/CwSAuunkCc0/RgIVOM09FUcncFiQDNo2q20vmS5z37fLPxX6rdYTr+lzJSjgikQrAH+JPrTeNpEYPay3t0RndN1SZ3j7t+7m8Gb3szXlc2FFnbOJcrAq1n9nUeYC5P+VNya8DPnoiFSLZi/kvJFJWOlU7HIl/NKiWqjxtT/bJCuEcyym8jp5KHFqE0C0eC3MYKl3S1EMmGXBJcyq+Yu1C3rNreKOa3KyR9k36J/4=
 deploy:
   provider: releases
+  api_key:
+    secure: >-
+        OX8rD8z3oVpk8TIprkstBk72xQM2kyqAgbQGP70D9kD0ieNTNwbkTyRsEcG1BkrVnmhf22xlT60De/NJ62uTNdPJiCaXzXadG4v5UbImZHVD8qBJ1RJaaaiwk3Q6WR8HkXwqyfEC3f2ybt06vv3IOyZDYjv8h9F6B/e9HdTtQAQxbPlSUYvSl4/H56MpS0HHKeJeTUVhB7kE5zWDPEUiCN3e0jMbjJkU7baJh6Sdow+7hJaKMutRaJhngrCDvQt3qRoA3XhMI2jVxC31HOEvsQ6q+xgVO9kUVnEWn2mhftZWOWp+auGdkJgrKvlzkwZzDVohYwOoGvY+9A5G3fwUSNHUcxCk/nY9X9K8oZCaGMifGp/ayQLqgQo4Koj5LnXo7dhFr4IbVDZLavxpQFgkPN4l51O6yDLR04xgzkO+k/b0/iuugxGa7/IdKWZYQefcSY7naOJV7+GOj5lVfldzDmB/YS395J5HsPYc7mJvbLu/ke84MDfp+8dMKG//Is47D2qzmV4otMuMCVZXu9B8FB2j5iKi76RScSVyxdjQZvhztW2kNCGgZDVSzDlCgr4P0PsHKhfBumS1+THJ/ouF4WYrIb4lmN7FvfGpguVj4AtYTEy8UxnsXuGs30MB8F1fLHNNMyFN9OH6DNH7ctFAzfa/MdC/2tPUDZKMnFz2ea4=
   file:
     - _build/resume.pdf
     - _build/resume-0.png
