@@ -6,13 +6,14 @@ clean:
 build:
 	$(MAKE) flair
 	latexmk -pdf -outdir=_build resume.tex
+	mv _build/resume.pdf _build/nate-wilkins_resume.pdf
 	$(MAKE) preview
 
 flair:
 	wget -O so-flair.png 'https://stackoverflow.com/users/flair/422312.png?theme=clean'
 
 preview:
-	convert -density 300 _build/resume.pdf -quality 90 -resize "50%" -background white -alpha remove _build/resume.png
+	convert -density 300 _build/nate-wilkins_resume.pdf -quality 90 -resize "50%" -background white -alpha remove _build/nate-wilkins_resume.png
 
 help:
 	@echo 'Makefile build automation                    '
