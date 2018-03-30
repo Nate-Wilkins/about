@@ -150,9 +150,9 @@
 \section{Programming Skills}
 \rSkillListStart
   \item{
-    \textbf{Languages}{: Elixir, C\#, JavaScript, Python, SQL}
+    \textbf{Languages}{: C\#, Elixir, JavaScript, Python, SQL}
     \hfill
-    \textbf{Technologies}{: GCP, Azure, React, Docker}
+    \textbf{Technologies}{: GCP, Azure Angular, React, Docker}
   }
 
   \item{
@@ -172,7 +172,7 @@
                                     small businesses worldwide.}
 
     \rRespListStart
-      \rResp {Reduced department development costs by 26 hours a day by
+      \rResp {Reduced 26 hours of department development costs by
                 developing an easy-to-use, consistent, \\
                 reproducible build pipeline written in \textbf{PowerShell}.}
 
@@ -182,12 +182,11 @@
       \rResp {Implemented \textbf{Windsor} facilities - logging, database
                 transaction management, and event dispatching.}
 
-      \rResp {Provided insights into \textbf{AngularJS} and front-end best
-                practices.}
+      \rResp {Provided teams with \textbf{AngularJS} technical guidance and
+                front-end best practices.}
 
-      \rResp {Refactored component services to use a \textbf{Windsor IoC}
-                container to better manage component services \\
-                and their dependencies.}
+      \rResp {Refactored components to use a \textbf{Windsor IoC}
+                container for dependency management and simpler unit tests}
 
       \rResp {Implemented \textbf{SonarQube}, a code quality analysis tool,
                 to help manage technical debt across the organization.}
@@ -198,20 +197,19 @@
       \rResp {Created \textbf{XUnit} component tests to solidify quoting,
                 underwriting, and eligibility features.}
 
-      \rResp {Collaborated with Operations to migrate our \textbf{TFS}
+      \rResp {Collaborated with operations to migrate our \textbf{TFS}
                 repository of 18,000 files to \textbf{Git}.}
     \rRespListEnd
 
     % ----------[ Employee Search ]---------------------------------------------\
-    \rProj {web} {Employee Search} {Administration application used by employers
+    \rProj {web} {Employee Search} {Internal tool used by clients
                                       to manage employees on the BrightChoices
                                       platform.}
     \rRespListStart
-      % TODO: Yeah?
-      \rResp {Communicated closely with key stakeholders to develop a full
-                functioning, self-contained application.}
+      \rResp {Designed from the ground up as a standalone service to reduce peak
+                platform loads.}
 
-      \rResp {Reduced BrightChoices legacy employee search result load times
+      \rResp {Utilized to reduce employee search result load times
                 from 16s to 48ms.}
 
       \rResp {Developed core search functionality on top of
@@ -220,8 +218,8 @@
       \rResp {Utilized advanced \textbf{ElasticSearch} functionality including
                 sharding, typeahead, and custom tokenizers.}
 
-      \rResp {Implemented as a \textbf{Docker} container for portability and
-                easier deployments to \textbf{Azure}.}
+      \rResp {Implemented application as a \textbf{Docker} container for
+                portability and easier deployments to \textbf{Azure}.}
 
       \rResp {Developed custom sync tool with \textbf{Dapper} to align
                 ``master'' employee records. Refactored later to \\
@@ -244,7 +242,7 @@
 
     \rRespListStart
       \rResp {Communicated closely with key stakeholders to develop a full
-                functioning application service.}
+                functioning, self-contained application.}
 
       \rResp {Provided leadership to a team of 6 to build and deploy the
                 application service.}
@@ -252,8 +250,12 @@
       \rResp {Created \textbf{UML} diagrams and \textbf{\LaTeX} documents to
                 facilitate communication between teams.}
 
-      \rResp {Developed back-end functionality with \textbf{TopShelf} and
-                \textbf{C\#}.}
+      \rResp {Implemented back-end functionality on top of
+                \textbf{Azure Service Fabric} with local bindings using
+                \textbf{TopShelf}.}
+
+      \rResp {Implemented \textbf{RESTful} APIs using
+                \textbf{WebAPI} and \textbf{Dapper}.}
 
       \rResp {Refactored existing BrightChoices front-end code written in
                 \textbf{Razor} to talk to the new application service.}
@@ -286,35 +288,34 @@
   \rExp  {Carestream Health} {Software Contractor}                    {2013-2015}
   \rProjListStart
     % -----------------[ NextGen Platform ]-------------------------------------\
-    \rProj {web/native} {NextGen Platform} {Rewrite of the CaptureCommon
-                                              Platform to architecture to
-                                              support the next generation of
-                                              X-Ray Solutions.}
+    \rProj {web/native} {NextGen Platform} {Rewrite of the core software
+                                              platform to support the next
+                                              generation of X-Ray Solutions.}
     \rRespListStart
-      \rResp {Served as a leading technical specialist.}
+      \rResp {Served as the leading technical specialist for \textbf{AngularJS}
+                and other web technologies.}
 
       \rResp {Developed \textbf{il18n} system with \textbf{angular-translate},
                 \textbf{CLDR}, and \textbf{MomentJS}.}
 
-      \rResp {Developed build and deployment infrastructure using \textbf{npm}
+      \rResp {Developed a build and deployment infrastructure using \textbf{npm}
                 and \textbf{NodeJS} integrated into \textbf{MSBuild}.}
 
       \rResp {Established \textbf{AngularJS} design patterns and best
                 practices.}
 
-      \rResp {Developed kVp, MA, and time components used in the X-Ray
-                generator.}
+      \rResp {Developed kVp, MA, and time components used in X-Ray generators.}
 
       \rResp {Utilized \textbf{MassTransit} and \textbf{SignalR} to interface
-                our web application directly with the modular XRS hardware.}
+                the web application directly with the modular hardware.}
 
       \rResp {Developed an easy-to-use spinner control that could be applied to
                 individual components.}
 
       \rResp {Collaborated with product teams to gather required functionality.}
 
-      \rResp {Implemented modular configurations on build using \textbf{AngularJS}
-                services for use by platform products.}
+      \rResp {Developed reusable configuration workflows for products on the
+                platform.}
     \rRespListEnd
 
     % ----------[ Translations Manager ]----------------------------------------\
@@ -324,16 +325,13 @@
                                            NextGen product translations.}
 
     \rRespListStart
-      % TODO: Yeah?
-      \rResp {Communicated closely with key stakeholders to develop a full
-                functioning, self-contained application.}
+      \rResp {Designed from the ground up as a standalone application to
+                decrease translation lead time.}
 
       \rResp {Managed localizations for 25 languages and over 125,000
-        translations with ease.}
+                translations with ease.}
 
-      \rResp {Developed integrations into the \textbf{NextGen il18n}
-                infrastructure. \\
-              Created exporters for various formats
+      \rResp {Created exporters for various clients using
                 (\textbf{XLIFF}, \textbf{XML}, \textbf{JSON}, and \textbf{CSV})}
 
       \rResp {Implemented a back-end \textbf{RESTful} API using
@@ -346,19 +344,19 @@
       \rResp {Implemented full-text search functionality using \textbf{SQL} and
                 \textbf{NHibernate}.}
 
-      \rResp {Developed entity based permissions system with \textbf{LINQ} and
-                \textbf{ExpressionTrees} to limit user access to certain entities
-                regarding their own state.}
+      \rResp {Developed an entity based permissions system with
+                \textbf{LINQ ExpressionTrees} to limit access to certain
+                entities.}
 
-      \rResp {Configured \textbf{IIS Web Deployments} to deploy to a local
-                intranet. \\
-              Later setup on \textbf{TravisCI} for automated deployments.}
+      \rResp {Configured \textbf{IIS Web Deploy} to deploy to a local
+                intranet. Later setup on \textbf{Jenkins CI} for
+                automated deployments.}
     \rRespListEnd
 
     % -------------[ DRX Detector Applications ]--------------------------------\
     \rProj {native} {DRX Detector Applications} {Sample software to provide
-                                                   partnered vendors to
-                                                   create third party
+                                                   partnered vendors the ability
+                                                   to create third party
                                                    applications to integrate
                                                    with the DRX Detector.}
     \rRespListStart
@@ -382,8 +380,7 @@
                                       \textbf{BDD} specs.}
 
   \rProj {web} {code-null.com} {Developed a personal website using
-                                  \textbf{Elixir} and hosted with
-                                  \textbf{Google Firebase}.}
+                                  \textbf{Elixir} and \textbf{Google Firebase}.}
 
   \rProj {native} {EvE} {Developed reproducible development environments for
                             Windows and Ubuntu. Utilized \textbf{Docker} and
