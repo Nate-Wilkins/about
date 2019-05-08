@@ -4,27 +4,27 @@
 
 ## Languages
 
-- Elixir
-- Python
 - C#
+- Python
 - JavaScript
+- Elixir
 - SQL
 - Java
 - Bash
 - Powershell
-- Elang
+- Erlang
 - CUDA
 - HLSL
 
 ## Environment
 
 - Windows (XP -> 10)
-- Linux (Debian)
+- Linux (Debian, Manjaro)
 - Docker
 - Atom
 - Visual Studio (10 -> 17)
+- VSCode
 - Spacemacs
-- Neovim
 - Eclipse (Kepler, Luna)
 - Resharper (7 -> ultimate)
 - Rosyln
