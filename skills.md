@@ -7,27 +7,19 @@
 - C#
 - Python
 - JavaScript
-- Elixir
 - SQL
 - Java
-- Bash
-- Powershell
+- Terminal (bash, powershell, etc)
 - Erlang
-- CUDA
-- HLSL
+- Elixir
 
 ## Environment
 
 - Windows (XP -> 10)
 - Linux (Debian, Manjaro)
 - Docker
-- Atom
-- Visual Studio (10 -> 17)
+- Visual Studio (10 -> 19)
 - VSCode
-- Spacemacs
-- Eclipse (Kepler, Luna)
-- Resharper (7 -> ultimate)
-- Rosyln
 - Unity
 - Unreal
 
