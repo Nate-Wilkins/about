@@ -69,7 +69,7 @@
   \end{tabular*}
 }
 
-% Project 
+% Project
 \newenvironment{project}[3]
 {
   \setlength{\leftskip}{.75em}
@@ -83,14 +83,14 @@
     \setlength{\itemsep}{0em}
     \setlength{\parskip}{0em}
     \setlength{\parsep}{0em}     }
-{ \end{itemize}                  } 
+{ \end{itemize}                  }
 
 \newenvironment{accomplishment_item}[1]
 {
   \item{#1}
 }
 
-% Education 
+% Education
 \newenvironment{education}[3]
 {
   \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
@@ -113,7 +113,7 @@
 % -[ Header ]------------------------------------------------------------------\
 % /
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://code-null.com/about}{\Large{Nathaniel Wilkins}}} & 
+  \textbf{\href{http://code-null.com/about}{\Large{Nathaniel Wilkins}}} &
   \href{mailto:nate-wilkins@code-null.com}{nate-wilkins@code-null.com} \\
   \href{http://code-null.com/about}{code-null.com/about} & (585) 210-2403 \\
   \\
@@ -121,20 +121,20 @@
 
 % -[ Blurb ]-------------------------------------------------------------------\
 % /
-Accomplished Software Engineer with 5+ years of modern web development 
+Accomplished Software Engineer with 5+ years of modern web development
 experience with a passion to learn! Well-versed in continuous delivery practices with a key focus on
-pragmatism, customer success, and data-driven decisions. 
+pragmatism, customer success, and data-driven decisions.
 
 % -[ Sections ]----------------------------------------------------------------\
 % /
 \section{Programming Skills}
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{Languages:} C\#, Python, JavaScript, SQL, Elixir 
-    & \textbf{Technologies:} GCP, Azure, React, Angular, Docker \\
+  \textbf{Languages:} C\#, Python, Elixir, SQL, JavaScript
+    & \textbf{Technologies:} GCP, Azure, ReactJS, Docker \\
 
   \multicolumn{2}{l}{
-    \textbf{Development:} S/W Design Patterns, OO Modeling \& Design, SOLID
-        Principles, Continuous Integration
+    \textbf{Development:} SW Design Patterns, FP Principles, SOLID
+        Principles
   } \\
 \end{tabular*}
 
@@ -144,9 +144,9 @@ pragmatism, customer success, and data-driven decisions.
 \begin{project}
   {web} {API Discover \& Inspect}
   {
-    A continuous automated discovery service that finds new APIs, potential 
-    API changes, and other cloud services related to these APIs within 
-    customers’ cloud environments.
+    A continuous automated discovery service that finds new APIs, potential
+    API changes, and other cloud services related to these APIs within
+    customer environments.
   }
 \end{project}
 \begin{accomplishment_list}
@@ -156,7 +156,7 @@ pragmatism, customer success, and data-driven decisions.
       an Azure environment.
       % Notes:
       %
-      % - Utilized GCP functions and pubsub messaging to discover Azure 
+      % - Utilized GCP functions and pubsub messaging to discover Azure
       %   resources
     }
   \end{accomplishment_item}
@@ -172,7 +172,7 @@ pragmatism, customer success, and data-driven decisions.
 \begin{accomplishment_list}
   \begin{accomplishment_item}
     {
-      Implemented compliance features to help customers identify 
+      Implemented compliance features to help customers identify
       applications that could be incompliant.
     }
   \end{accomplishment_item}
@@ -188,19 +188,13 @@ pragmatism, customer success, and data-driven decisions.
       \textbf{seaborn}.
     }
   \end{accomplishment_item}
-  \begin{accomplishment_item}
-    {
-      Managed customer success queries by utilizing \textbf{GCP} to handle 
-      updating the integration status of over 8,000 mobile applications.
-    }
-  \end{accomplishment_item}
 \end{accomplishment_list}
 
 \begin{project}
   {web} {App Search}
   {
-    Mobile app search database with an automated app tracking service
-    built-in.
+    Mobile app security search database that allowed customers to get a quick
+    security assessment of any mobile app on the market.
   }
 \end{project}
 \begin{accomplishment_list}
@@ -212,7 +206,7 @@ pragmatism, customer success, and data-driven decisions.
   \end{accomplishment_item}
   \begin{accomplishment_item}
     {
-      Proposed and implemented features to build out Data Theorem products. 
+      Proposed and implemented features to build out Data Theorem products.
       % Notes:
       %
       % - Search service for products to be used by customers directly.
@@ -223,14 +217,14 @@ pragmatism, customer success, and data-driven decisions.
       Streamlined searching algorithm to tackle major user experience flaws.
       % Notes:
       %
-      % - Implemented parallel resource fetching using redux-saga to 
+      % - Implemented parallel resource fetching using redux-saga to
       %   aggregate search results from different sources.
     }
   \end{accomplishment_item}
 \end{accomplishment_list}
 
 % -[ Liazon ]------------------------------------------------------------------\
-\begin{experience}{Liazon} {Senior Software Engineer} {2015-2018}\end{experience}
+\begin{experience}{Liazon} {Software Engineer} {2015-2018}\end{experience}
 \begin{project}
   {web} {BrightChoices}
   {
@@ -240,21 +234,21 @@ pragmatism, customer success, and data-driven decisions.
 \begin{accomplishment_list}
   \begin{accomplishment_item}
     {
-      Reduced 26 hours of daily department development costs by developing
-      an easy-to-use, consistent, reproducible build pipeline written in 
+      Reduced \textbf{26 hours} of daily department development costs by developing
+      an easy-to-use, consistent, reproducible build pipeline written in
       \textbf{PowerShell}.
     }
   \end{accomplishment_item}
   \begin{accomplishment_item}
     {
-      Utilized \textbf{NServiceBus} and \textbf{MSMQ} messaging patterns 
+      Utilized \textbf{NServiceBus} and \textbf{MSMQ} messaging patterns
       to handle core business operations.
     }
   \end{accomplishment_item}
   \begin{accomplishment_item}
     {
-      Provided teams with technical guidance of \textbf{AngularJS} and 
-      front-end best practices.
+      Provided the front-end team with technical guidance of \textbf{AngularJS} and
+      best practices.
     }
   \end{accomplishment_item}
   \begin{accomplishment_item}
@@ -263,10 +257,10 @@ pragmatism, customer success, and data-driven decisions.
       application services.
       % Notes:
       %
-      % - Refactored components to use a Windsor IoC container for 
+      % - Refactored components to use a Windsor IoC container for
       %   dependency management and simpler unit tests.
       %
-      % - Implemented Windsor facilities - logging, database 
+      % - Implemented Windsor facilities - logging, database
       %   transaction management, and event dispatching.
     }
   \end{accomplishment_item}
@@ -274,19 +268,19 @@ pragmatism, customer success, and data-driven decisions.
     {
       Lead major testing efforts to get monolithic legacy code under test.
       % Notes:
-      % - Implemented SonarQube, a code quality analysis tool, to help 
+      % - Implemented SonarQube, a code quality analysis tool, to help
       %   manage technical debt across the organization.
       %
-      % - Created SpecFlow integration tests to help put monolithic 
+      % - Created SpecFlow integration tests to help put monolithic
       %   legacy code under test.
       %
-      % - Created XUnit component tests to solidify quoting, underwriting, 
+      % - Created XUnit component tests to solidify quoting, underwriting,
       %   and eligibility features.
     }
   \end{accomplishment_item}
   \begin{accomplishment_item}
     {
-      Held \textbf{Git} lessons and collaborated with operations to 
+      Held \textbf{Git} lessons and collaborated with operations to
       migrate the \textbf{TFS} repository of 18,000 files to \textbf{Git}.
     }
   \end{accomplishment_item}
@@ -302,11 +296,11 @@ pragmatism, customer success, and data-driven decisions.
 \begin{accomplishment_list}
   \begin{accomplishment_item}
     {
-      Developed from the ground up as a standalone service to reduce 
+      Developed from the ground up as a standalone service to reduce
       peak platform traffic.
       % Notes:
-      % 
-      % - Developed search functionality on top of ElasticSearch 
+      %
+      % - Developed search functionality on top of ElasticSearch
       %   using Mono C#.
     }
   \end{accomplishment_item}
@@ -317,12 +311,12 @@ pragmatism, customer success, and data-driven decisions.
   \end{accomplishment_item}
   \begin{accomplishment_item}
     {
-      Transitioned preexisting platform solution while maintaining backward 
-      compatibility. 
+      Planned out the transition of the preexisting platform solution while maintaining backward
+      compatibility.
       % Notes:
       %
       % - Developed custom sync tool with Dapper to align 'master'
-      %   employee records. Refactored later to implement Elastic's 
+      %   employee records. Refactored later to implement Elastic's
       %   LogStash.
       % - Implemented application as a \textbf{Docker} container for portability
       %   and easier deployments to \textbf{Azure}.
@@ -330,11 +324,11 @@ pragmatism, customer success, and data-driven decisions.
   \end{accomplishment_item}
   \begin{accomplishment_item}
     {
-      Maintained running operations with the platform using developed
+      Operations were maintained with the platform by using
       \textbf{MSMQ} event hooks, \textbf{NancyFX}, and \textbf{ReactJS}.
       % Notes:
       %
-      % - Kept employee records up-to-date with the BrightChoices platform 
+      % - Kept employee records up-to-date with the BrightChoices platform
       %   using MSMQ
       % - NancyFX used for operational needs and provided a basic RESTful API to
       %   access denormalized employee records.
@@ -343,8 +337,8 @@ pragmatism, customer success, and data-driven decisions.
   \end{accomplishment_item}
   \begin{accomplishment_item}
     {
-      Implemented business functionality using advanced 
-      \textbf{ElasticSearch} functionality including sharding, typeahead, and 
+      Implemented business functionality using advanced
+      \textbf{ElasticSearch} functionality including sharding, typeahead, and
       custom tokenizers.
     }
   \end{accomplishment_item}
@@ -353,14 +347,14 @@ pragmatism, customer success, and data-driven decisions.
 \begin{project}
   {web} {Insurance Inventory}
   {
-    Administration application used to manage insurance product 
+    Administration application used to manage insurance product
     configurations.
   }
 \end{project}
 \begin{accomplishment_list}
   \begin{accomplishment_item}
     {
-      Communicated closely with stakeholders throughout development to meet 
+      Communicated closely with stakeholders throughout development to meet
       business expectations.
     }
   \end{accomplishment_item}
@@ -372,20 +366,20 @@ pragmatism, customer success, and data-driven decisions.
   \end{accomplishment_item}
   \begin{accomplishment_item}
     {
-      Created \textbf{UML} diagrams and \textbf{\LaTeX} documents to
+      Created \textbf{UML} diagrams and planned workload documents to
       facilitate communication between teams.
     }
   \end{accomplishment_item}
   \begin{accomplishment_item}
     {
-      Implemented back-end functionality on top of 
-      \textbf{Azure Service Fabric} with local bindings using 
+      Implemented back-end functionality on top of
+      \textbf{Azure Service Fabric} with local bindings using
       \textbf{TopShelf}.
     }
   \end{accomplishment_item}
   \begin{accomplishment_item}
     {
-      Implemented \textbf{RESTful} APIs using \textbf{WebAPI} and 
+      Implemented \textbf{RESTful} APIs using \textbf{WebAPI} and
       \textbf{Dapper}.
     }
   \end{accomplishment_item}
@@ -396,17 +390,17 @@ pragmatism, customer success, and data-driven decisions.
 \begin{project}
   {native} {Ocelot Test Runner}
   {
-    Developed an \textbf{Electron} application to run \textbf{SpecFlow} 
+    Developed an \textbf{Electron} application to run \textbf{SpecFlow}
     integration.
     % Notes:
     %
-    % - Utilized by Quality Engineers to increase overall efficiency of the 
+    % - Utilized by Quality Engineers to increase overall efficiency of the
     %   testing processes.
   }
 \end{project}
 
 \begin{project}
-  {native} {BrightChoices VR} 
+  {native} {BrightChoices VR}
   {
     ``Online'' private benefits exchange for large and small businesses in
     virtual reality!
@@ -415,14 +409,14 @@ pragmatism, customer success, and data-driven decisions.
 \begin{accomplishment_list}
   \begin{accomplishment_item}
     {
-      Developed a rudimentary shopping experience in 
-      \textbf{Virtual Reality} with \textbf{Unity} and the 
+      Developed a rudimentary shopping experience in
+      \textbf{Virtual Reality} with \textbf{Unity} and the
       \textbf{HTC Vive}.
     }
   \end{accomplishment_item}
   \begin{accomplishment_item}
     {
-      Collaborated with two other team members to build a working prototype 
+      Collaborated with two other team members to build a working prototype
       in a two-day hackathon.
     }
   \end{accomplishment_item}
@@ -431,9 +425,9 @@ pragmatism, customer success, and data-driven decisions.
 % -[ Carestream Health ]-------------------------------------------------------\
 \begin{experience}{Carestream Health} {Software Contractor} {2013-2015}\end{experience}
 \begin{project}
-  {web/native} {NextGen Platform} 
+  {web/native} {NextGen Platform}
   {
-    Rewrite of the core software platform to support the next generation of 
+    Rewrite of the core software platform to support the next generation of
     X-Ray Solutions.
   }
 \end{project}
@@ -475,23 +469,23 @@ pragmatism, customer success, and data-driven decisions.
   \end{accomplishment_item}
   \begin{accomplishment_item}
     {
-      Developed reusable configuration workflows for products on the 
+      Developed reusable configuration workflows for products on the
       platform.
     }
   \end{accomplishment_item}
 \end{accomplishment_list}
 
 \begin{project}
-  {web} {Translations Manager} 
+  {web} {Translations Manager}
   {
-    Localization workflow application to manage the creation, maintenance, 
+    Localization workflow application to manage the creation, maintenance,
     and processing of NextGen product translations.
   }
 \end{project}
 \begin{accomplishment_list}
   \begin{accomplishment_item}
     {
-      Developed from the ground up as a standalone application to decrease 
+      Developed from the ground up as a standalone application to decrease
       translation lead time by months to weeks.
     }
   \end{accomplishment_item}
@@ -500,20 +494,20 @@ pragmatism, customer success, and data-driven decisions.
       Managed localizations for 25 languages and over 125,000 translations.
       % Notes:
       %
-      % - Implemented a back-end RESTful API using WebAPI2 
+      % - Implemented a back-end RESTful API using WebAPI2
       %   to access languages, translations, products, and users.
       % - Implemented a front-end SPA using AngularJS and ui-grid.
     }
   \end{accomplishment_item}
   \begin{accomplishment_item}
     {
-      Maintained system security using an ACL built with 
+      Maintained system security using an ACL built with
       \textbf{LINQ ExpressionTrees}.
     }
   \end{accomplishment_item}
   \begin{accomplishment_item}
     {
-      Created exporters for various clients using 
+      Created exporters for various clients using
       (\textbf{XLIFF}, \textbf{XML}, \textbf{JSON}, and \textbf{CSV})
     }
   \end{accomplishment_item}
@@ -525,14 +519,14 @@ pragmatism, customer success, and data-driven decisions.
   \end{accomplishment_item}
   \begin{accomplishment_item}
     {
-      Configured \textbf{IIS Web Deploy} to deploy to a local intranet. 
+      Configured \textbf{IIS Web Deploy} to deploy to a local intranet.
       Later setup on \textbf{Jenkins CI} for automated deployments.
     }
   \end{accomplishment_item}
 \end{accomplishment_list}
 
 \begin{project}
-  {native} {DRX Detector Applications} 
+  {native} {DRX Detector Applications}
   {
     Sample software to provide partnered vendors the ability to create third
     party applications to integrate with the DRX Detector.
@@ -550,9 +544,9 @@ pragmatism, customer success, and data-driven decisions.
       DRX detector.
       % Notes:
       %
-      % - Developed a C# composable facade to encapsulate the DRX 
+      % - Developed a C# composable facade to encapsulate the DRX
       %   detector API.
-    } 
+    }
   \end{accomplishment_item}
 \end{accomplishment_list}
 
@@ -561,28 +555,27 @@ pragmatism, customer success, and data-driven decisions.
 \begin{project}
   {web} {eslint-plugin-bdd}
   {
-    Implemented an \textbf{ESLint} plugin to lint \textbf{BDD} specs. 
-    Used by various projects in production.
+    Implemented an \textbf{ESLint} plugin for linting \textbf{BDD} specs.
+    With over 65,000 downloads annually. This package is also used in the official JetBrains eslint config.
   }
 \end{project}
 \begin{project}
   {web} {code-null.com}
   {
-    Developed a personal website using \textbf{Elixir} 
+    Developed a personal website using \textbf{Elixir}
     and \textbf{Google Firebase}.
   }
 \end{project}
 \begin{project}
-  {native} {EvE} 
+  {native} {EvE}
   {
-    Developed reproducible development environment for \textbf{Windows} 
-    and \textbf{Manjaro}.
+    Developed reproducible development environments for both \textbf{Windows} and \textbf{Linux Manjaro}.
   }
 \end{project}
 \begin{project}
   {native} {video-pipeline}
   {
-    Simplifies video streaming providing frame by frame image manipulation in 
+    A simplified video streaming platform providing frame by frame image manipulation in
     near real-time.
   }
 \end{project}
@@ -594,7 +587,7 @@ pragmatism, customer success, and data-driven decisions.
 \begin{accomplishment_list}
   \begin{accomplishment_item}
     {
-      Developed a configurable Jeopardy game with questions, sound, and even 
+      Developed a configurable Jeopardy game with questions, sound, and even
       animations using Java.
     }
   \end{accomplishment_item}
@@ -610,8 +603,8 @@ pragmatism, customer success, and data-driven decisions.
 
 % -[ Other ]-------------------------------------------------------------------\
 \section{Other}
-\begin{other}{Placed 2nd in the Synacor Hackathon} {Buffalo, NY} {2017}\end{other}
-\begin{other}{Attended Abstractions.io conference.} {Pittsburgh, PA} {2017}\end{other}
-\begin{other}{Attended CodeMash conferences.} {Sandusky, OH} {2016-2017}\end{other}
+\begin{other}{Placed 3rd in the Synacor Hackathon} {Buffalo, NY}    {2017}\end{other}
+\begin{other}{Attended Abstractions.io conference} {Pittsburgh, PA} {2017}\end{other}
+\begin{other}{Attended CodeMash conferences (3x)}  {Sandusky, OH}   {2016-2017}\end{other}
 
 \end{document}
