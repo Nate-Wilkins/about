@@ -1,0 +1,12 @@
+pdf:
+  before_script:
+    - apt-get -qq update
+    - apt-get install -y --no-install-recommends perl
+    - apt-get install -y --no-install-recommends texlive texlive-latex-extra
+    - apt-get install -y latexmk
+    - apt-get install -y pandoc
+    - apt-get install -y imagemagick
+  script: make all
+  artifacts:
+    paths:
+      - _build/**
