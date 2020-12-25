@@ -12,6 +12,7 @@ build:
     - apt-get install -y latexmk
     - apt-get install -y pandoc
     - apt-get install -y imagemagick
+    - sed -i '/disable ghostscript format types/,+6d' /etc/ImageMagick-6/policy.xml
   script: make all
   artifacts:
     paths:
