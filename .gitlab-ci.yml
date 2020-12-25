@@ -4,6 +4,7 @@ default:
 build:
   before_script:
     - apt-get -qq update
+    - apt-get install -y build-essential
     - apt-get install -y --no-install-recommends perl
     - apt-get install -y --no-install-recommends texlive texlive-latex-extra
     - apt-get install -y latexmk
